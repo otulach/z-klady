@@ -1,14 +1,14 @@
 package ondrovyúkoly;
 
-import java.util.Scanner;
-
 public class OndrovyÚkoly {
 
     public static void main(String[] args) {
-        System.out.println("Vítej v umocňovači!");
-        System.out.println("Zadej číslo k umocnění:");
-        Scanner sc = new Scanner(System.in, "UTF-8");
-        int číslo = sc.nextInt();
-        System.out.println("Mocnina je " + (číslo * číslo));
+        System.out.println("Násobilkovač!");
+        for (int a = 1; a <= 10; a++) {
+            for (int b = 1; b <= 10; b++) {
+                System.out.printf("%3d ", a * b);
+            }
+            System.out.println();
+        }
     }
 }
