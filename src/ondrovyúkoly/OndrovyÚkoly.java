@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class OndrovyÚkoly {
 
     public static void main(String[] args) {
-        System.out.println("Jak se jmenuješ?");
+        System.out.println("Vítej v umocňovači!");
+        System.out.println("Zadej číslo k umocnění:");
         Scanner sc = new Scanner(System.in, "UTF-8");
-        String jméno = sc.nextLine();
-        System.out.println("Jak se máš?");
-        String stav = sc.nextLine();
-        System.out.println(jméno + " se má " + stav);
+        int číslo = sc.nextInt();
+        System.out.println("Mocnina je " + (číslo * číslo));
     }
 }
